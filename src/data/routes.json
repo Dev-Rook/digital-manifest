@@ -1,3 +1,27 @@
 [
-    {}
+    {
+        "id": 1, 
+        "name": "Home",
+        "route": "/"
+    },
+    {
+        "id": 1, 
+        "name": "Manifests",
+        "route": "/"
+    },
+    {
+        "id": 1, 
+        "name": "Actions",
+        "route": "/"
+    },
+    {
+        "id": 1, 
+        "name": "News",
+        "route": "/"
+    },
+    {
+        "id": 1, 
+        "name": "Portals",
+        "route": "/"
+    }
 ]
