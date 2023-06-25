@@ -1,0 +1,29 @@
+.contentContainer {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 20px;
+
+  height: fit-content;
+  width: fit-content;
+
+  .actionBox {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 20px 50px;
+
+    height: fit-content;
+    width: fit-content;
+
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Create New Manifest",
+        "img": "",
+        "link": "/create manifest"
+    },
+    {
+        "id": 2,
+        "title": "Leave Feedback",
+        "img": "",
+        "link": "/feedback"
+    }
+]
