@@ -7,21 +7,21 @@
     {
         "id": 1, 
         "name": "Manifests",
-        "route": "/"
+        "route": "/manifestts"
     },
     {
         "id": 1, 
         "name": "Actions",
-        "route": "/"
+        "route": "/actions"
     },
     {
         "id": 1, 
         "name": "News",
-        "route": "/"
+        "route": "/news"
     },
     {
         "id": 1, 
         "name": "Portals",
-        "route": "/"
+        "route": "/portals"
     }
 ]

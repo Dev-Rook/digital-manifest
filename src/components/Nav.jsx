@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Hooks Import:
@@ -17,38 +17,63 @@ const Nav = () => {
   const [routes, setRoutes] = useState(routeData);
   const [show, setShow] = useState(false);
   const [auth, setAuth] = useState(false);
+  const [clicked, setClicked] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
+  // Hooks
   const { windowWidth } = useWindowWidth();
+  // const { scrollUp } = useScrollUp();
+
+  let menuRef = useRef();
+
+  useEffect(() => {
+    const closeMenu = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setShow(false);
+        setClicked(false);
+      }
+    };
+
+    document.addEventListener("mousedown", closeMenu);
+    return () => {
+      document.removeEventListener("mousedown", closeMenu);
+    };
+  });
 
   const toggleMobileMenu = () => {
     setShow((prev) => !prev);
-    console.log("Toggle")
   };
 
   const profileLink = `https://i.pinimg.com/564x/2e/bf/3f/2ebf3fedb20aaf0235ba11a69e34f7fe.jpg`;
 
   return (
-    <nav className={styles.nav}>
+    <nav ref={menuRef} className={styles.nav}>
       <div className={styles.left}></div>
       <div className={styles.right}>
         {auth ? (
           <ul className={styles.navlink_container}>
             {routes?.map((route) => {
               return (
-                <li key={route.id}>
+                <li key={route.id} onClick={toggleMobileMenu}>
                   <Link to={route.route}>{route?.name}</Link>
                 </li>
               );
             })}
           </ul>
         ) : (
-          <Link to="/login">Login</Link>
+          <>{windowWidth <= 996 ? null : <Link to="/login">Login</Link>}</>
         )}
         <div onClick={toggleMobileMenu} className={styles.profile_icon}>
           <img src={profileLink} alt="" className={styles.img} />
         </div>
       </div>
-      {windowWidth <= 996 ? <MobileMenu show={show} /> : null}
+      {windowWidth <= 996 ? (
+        <MobileMenu
+          show={show}
+          toggleMobileMenu={toggleMobileMenu}
+          auth={auth}
+        />
+      ) : null}
     </nav>
   );
 };

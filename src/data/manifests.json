@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "number": 12,
+        "date": ["KGN: 20.06.23", "MB: 25.05.23"],
+        "cont_number": "SMLU794801-0",
+        "bl_number": "SMLU7636753A",
+        "pcs_count": 158,
+        "ship": "As Petra"
+    },
+    {
+        "id": 2,
+        "number": 13,
+        "date": ["KGN: 30.06.23", "MB: 5.07.23"],
+        "cont_number": "SMLU794801-0",
+        "bl_number": "SMLU7636753A",
+        "pcs_count": 147,
+        "ship": "As Petra"
+    },
+    {
+        "id": 3,
+        "number": 14,
+        "date": ["KGN: 13.07.23", "MB: 17.07.23"],
+        "cont_number": "SMLU794801-0",
+        "bl_number": "SMLU7636753A",
+        "pcs_count": 120,
+        "ship": "As Petra"
+    },
+    {
+        "id": 4,
+        "number": 15,
+        "date": ["KGN: 25.07.23", "MB: 30.07.23"],
+        "cont_number": "SMLU794801-0",
+        "bl_number": "SMLU7636753A",
+        "pcs_count": 149,
+        "ship": "As Petra"
+    },
+    {
+        "id": 5,
+        "number": 16,
+        "date": ["KGN: 4.08.23", "MB: 9.08.23"],
+        "cont_number": "SMLU794801-0",
+        "bl_number": "SMLU7636753A",
+        "pcs_count": 132,
+        "ship": "As Petra"
+    }
+]

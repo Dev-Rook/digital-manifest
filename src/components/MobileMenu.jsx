@@ -7,17 +7,16 @@ import styles from "../styles/comp-styles/mobileMenu.module.scss";
 // Json Import:
 import routeData from "../data/routes";
 
-const MobileMenu = ({show}) => {
+const MobileMenu = ({ show, toggleMobileMenu, auth }) => {
   const [routes, setRoutes] = useState(routeData);
-  const [auth, setAuth] = useState(false);
 
   return (
-    <nav className={`${styles.mobile_menu} ${show? styles.reveal : ""}`}>
+    <nav className={`${styles.mobile_menu} ${show ? styles.reveal : ""}`}>
       {auth ? (
         <ul className={styles.mobile_navlink_container}>
           {routes?.map((route) => {
             return (
-              <li key={route.id}>
+              <li key={route.id} onClick={toggleMobileMenu}>
                 <Link to={route.route} className={styles.link}>
                   {route?.name}
                 </Link>
@@ -26,7 +25,7 @@ const MobileMenu = ({show}) => {
           })}
         </ul>
       ) : (
-        <Link to="/login" className={styles.login_button}>
+        <Link onClick={toggleMobileMenu} to="/login" className={styles.login_button}>
           <button>Login</button>
         </Link>
       )}
