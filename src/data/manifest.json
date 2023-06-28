@@ -4,13 +4,14 @@
         "number": 12,
         "date": [
             "KGN: 20.06.23",
+            "-",
             "MB: 25.05.23"
         ],
         "cont_number": "SMLU794801-0",
         "bl_number": "SMLU7636753A",
         "pcs_count": 158,
         "ship": "As Petra",
-        "shippments": [
+        "shipments": [
             {
                 "shippment_id": 1,
                 "waybill": "WAK039839",
@@ -25,10 +26,90 @@
                     "contact": "1 (958) 125-3790"
                 },
                 "items": [
-                    "5 Barrels stc. Food, Clothes, H/Hold Items",
-                    "3 Boxes stc Electronics"
+                    {
+                        "item_id": 1,
+                        "type": "crate ",
+                        "ammount": 4,
+                        "description": "car parts"
+                    },
+                    {
+                        "item_id": 1,
+                        "type": "box",
+                        "ammount": 4,
+                        "description": "car parts"
+                    }
                 ],
-                "frieght": "$900.00"
+                "metrics": {
+                    "kg": 250,
+                    "cbm": 3.76,
+                    "frieght": "$900.00"
+                }
+            },
+            {
+                "shippment_id": 2,
+                "waybill": "WAK039839",
+                "sender": {
+                    "name": "John Doe",
+                    "address": "Some St, Some Town, Some State, USA",
+                    "contact": "1 (958) 125-3790"
+                },
+                "receiver": {
+                    "name": "Jane Doe",
+                    "address": "Some St, Some City, Some Parish, JA",
+                    "contact": "1 (958) 125-3790"
+                },
+                "items": [
+                    {
+                        "item_id": 1,
+                        "type": "crate ",
+                        "ammount": 4,
+                        "description": "car parts"
+                    },
+                    {
+                        "item_id": 1,
+                        "type": "box",
+                        "ammount": 4,
+                        "description": "car parts"
+                    }
+                ],
+                "metrics": {
+                    "kg": 250,
+                    "cbm": 3.76,
+                    "frieght": "$900.00"
+                }
+            },
+            {
+                "shippment_id": 3,
+                "waybill": "WAK039839",
+                "sender": {
+                    "name": "John Doe",
+                    "address": "Some St, Some Town, Some State, USA",
+                    "contact": "1 (958) 125-3790"
+                },
+                "receiver": {
+                    "name": "Jane Doe",
+                    "address": "Some St, Some City, Some Parish, JA",
+                    "contact": "1 (958) 125-3790"
+                },
+                "items": [
+                    {
+                        "item_id": 1,
+                        "type": "crate ",
+                        "ammount": 4,
+                        "description": "car parts"
+                    },
+                    {
+                        "item_id": 1,
+                        "type": "box",
+                        "ammount": 4,
+                        "description": "car parts"
+                    }
+                ],
+                "metrics": {
+                    "kg": 250,
+                    "cbm": 3.76,
+                    "frieght": "$900.00"
+                }
             }
         ]
     }
