@@ -1,9 +1,27 @@
-import React from 'react'
+import { useState } from "react";
+
+// Styles Import:
+
+// Json Import:
+import manifestData from "../data/manifest";
+
+// Components Import:
+import Head from "./elements/Head";
 
 const Shipment = () => {
-  return (
-    <div>Shipment</div>
-  )
-}
+  const [manifest, setManisfest] = useState(manifestData);
 
-export default Shipment
+  return (
+    <div className="page">
+      {manifest?.map((item) => {
+        return (
+          <>
+            <Head item={item} />
+          </>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Shipment;

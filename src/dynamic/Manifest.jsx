@@ -18,7 +18,7 @@ const Manifest = () => {
         return (
           <>
             <Head item={item} />
-            <p>{item.pcs_count} PCS</p>
+            <p className="pcs_count">{item.pcs_count} PCS</p>
             <DataGrid item={item} />
           </>
         );

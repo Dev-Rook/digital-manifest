@@ -13,7 +13,7 @@
         "ship": "As Petra",
         "shipments": [
             {
-                "shippment_id": 1,
+                "shipment_id": 1,
                 "waybill": "WAK039839",
                 "sender": {
                     "name": "John Doe",

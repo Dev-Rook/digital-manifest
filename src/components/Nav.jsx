@@ -16,7 +16,7 @@ import MobileMenu from "./MobileMenu";
 const Nav = () => {
   const [routes, setRoutes] = useState(routeData);
   const [show, setShow] = useState(false);
-  const [auth, setAuth] = useState(false);
+  const [auth, setAuth] = useState(true);
   const [clicked, setClicked] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
